@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* color: #ede5e2; */
+  font-family: Gilroy;
+}
+
+html,
+body {
+  overflow: hidden;
+  height: 100vh;
+  width: 100vw;
+}
+
+.text-color-primary {
+  color: #ede5e2;
+}
+
+.background {
+  background: #ef9d59;
+}
+
+.background-secondary {
+  background: #52ad9c;
+}
+
+.color-secondary {
+  color: #52ad9c;
+  text-shadow: 0px 2px 4px white;
+}
+
+.color-tertiary {
+  color: #297373;
+  text-shadow: 0px 2px 4px white;
+}
+
+.color-yellow {
+  color: #f3c969;
+}
+
+.heading {
+  text-shadow: 0px 2px 4px #222;
+  font-size: 3.2rem;
+  position: relative;
+}
+
+.subheading {
+  text-shadow: 0px 2px 4px #222;
+
+  font-size: 1.8rem;
+}
+
+.para {
+  text-shadow: 0px 2px 4px #222;
+
+  font-size: 1.1rem;
+}
+
+.btn-primary {
+  color: #ede5e2;
+  border: none;
+  background: #52ad9c;
+  padding: 1vmin 2.5vmin;
+  display: inline;
+  border-radius: 0.5rem;
+  transition: 0.3s all;
+  box-shadow: 0px 3px 3px #222;
+}
+
+.btn-primary:disabled {
+  background-color: #9fa5aa;
+}
+
+.btn-primary:disabled:hover {
+  box-shadow: 0px 3px 3px #222;
+}
+
+.btn-primary:hover {
+  box-shadow: 2px 5px 6px #222;
+}
+
+.border-right {
+  border-right: 2px solid #ef9d59;
+}
+
+.btn-secondary {
+  border: 1px solid white;
+  background: #f3a769;
+  color: white;
+  padding: 1vmin 1.5vmin;
+  border-radius: 1vmin;
+  box-shadow: 0px 2px 3px #222;
+  transition: 0.3s all;
+}
+
+.btn-secondary:hover {
+  box-shadow: 1px 3px 4px #222;
+}
+
+.scrollable {
+  overflow-y: auto !important;
+}
+
+/* Hide scrollbar buttons (arrows and track) */
+.scrollable::-webkit-scrollbar {
+  width: 0vmin;
+  opacity: 0;
+  transition: width 0.3s;
+}
+
+.scrollable:hover::-webkit-scrollbar {
+  opacity: 1;
+  width: 1vmin;
+}
+
+/* Customize the scrollbar thumb */
+.scrollable::-webkit-scrollbar-thumb {
+  background-color: #888; /* Change the background color as needed */
+  border-radius: 5px; /* Adjust the border radius as needed */
+}
+
+/* Customize the scrollbar track */
+.scrollable::-webkit-scrollbar-track {
+  background: transparent; /* Make the track transparent */
+}

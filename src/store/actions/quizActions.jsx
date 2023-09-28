@@ -1,0 +1,17 @@
+export {
+  getQuery,
+  getStatus,
+  setQuiz,
+  prev,
+  next,
+  setAnswers,
+  incScore,
+  decScore,
+  getSubmitted,
+  setActive,
+  setScore,
+  emptyAnswers,
+  resetStates,
+  setDisabled,
+  setScoreUpdates,
+} from "../reducers/quizReducer";

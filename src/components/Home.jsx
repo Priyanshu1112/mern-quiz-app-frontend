@@ -72,7 +72,7 @@ const Home = () => {
   return (
     <div className="container-fluid g-0 vw-100 overflow-hidden background text-color-primary ">
       <div className="row g-0">
-        <div className="col-lg-6 text-center px-3 d-flex flex-column justify-content-center align-items-center gap-5">
+        <div className="col-lg-6 text-center px-3 d-flex flex-column justify-content-center align-items-center gap-lg-5 gap-md-3">
           <section className="d-flex flex-column">
             <h1 className="heading">QuizArena</h1>
             <h3 className="subheading">
@@ -89,7 +89,7 @@ const Home = () => {
             Continue to Quiz
           </button>
         </div>
-        <div className="col-lg-6">
+        <div className="col-lg-6 mt-3">
           <img className="vh-100" src="images/home.png" alt="" />
         </div>
       </div>

@@ -9,7 +9,7 @@ import {
   setDisabled,
 } from "../store/actions/quizActions";
 
-const Configure = () => {
+const Configure = (props) => {
   const { start, isSubmitted, isDisabled } = useSelector(
     (state) => state.quizReducer
   );
@@ -79,6 +79,7 @@ const Configure = () => {
     // dispatch(getQuery(config));
     // dispatch(getStatus(true));
     // console.log(config);
+    document.getElementById("configure").classList.toggle("d-hide");
     setTimeout(() => {
       var config = {
         amount,
@@ -92,8 +93,23 @@ const Configure = () => {
     }, 100);
   };
 
+  useEffect(() => {
+    props.setConfigureComponent(document.getElementById("configure"));
+  }, []);
+
   return (
-    <div className="col-3 border-right vh-100 d-flex flex-column align-items-center pt-5">
+    <div
+      id="configure"
+      className="col-lg-3 col-5 border-right vh-100 d-flex flex-column align-items-center pt-5 d-hide p-hide"
+    >
+      <div
+        className=" w-100 fs-3"
+        onClick={() => {
+          document.getElementById("configure").classList.toggle("d-hide");
+        }}
+      >
+        <i className="ri-close-line"></i>
+      </div>
       <h2 className="heading " style={{ textShadow: "none" }}>
         Configure
       </h2>

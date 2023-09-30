@@ -124,3 +124,17 @@ body {
 .scrollable::-webkit-scrollbar-track {
   background: transparent; /* Make the track transparent */
 }
+
+@media (max-width: 991px) {
+  .d-hide {
+    display: none !important;
+  }
+  .p-hide {
+    position: absolute;
+    left: 0;
+    background: white;
+  }
+  .padding {
+    padding-left: 3vmin !important;
+  }
+}

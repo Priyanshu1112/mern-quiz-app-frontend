@@ -91,7 +91,10 @@ const QuizSection = () => {
   };
 
   return (
-    <div className="col-6 border-right  py-3" style={{ height: "100vh" }}>
+    <div
+      className="col-lg-6 col-9   border-right padding py-3"
+      style={{ height: "100vh" }}
+    >
       {!start ? (
         <NotStarted />
       ) : Object.keys(quiz).length === 0 ? (

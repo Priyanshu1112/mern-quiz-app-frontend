@@ -103,7 +103,7 @@ const Configure = (props) => {
       className="col-lg-3 col-5 border-right vh-100 d-flex flex-column align-items-center pt-5 d-hide p-hide"
     >
       <div
-        className=" w-100 fs-3"
+        className=" w-100 fs-3 d-lg-none"
         onClick={() => {
           document.getElementById("configure").classList.toggle("d-hide");
         }}

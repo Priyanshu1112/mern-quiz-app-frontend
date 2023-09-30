@@ -46,7 +46,7 @@ const Questions = () => {
     dispatch(setScoreUpdates(true));
   };
 
-  console.log("isScoreUpdated-------", isScoreUpdated);
+  // console.log("isScoreUpdated-------", isScoreUpdated);
 
   useEffect(() => {
     console.log("score===", score);

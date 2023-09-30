@@ -52,6 +52,10 @@ const Configure = () => {
       setError({ amount: "Valid amount is required!" });
       return;
     }
+    if (amount > 10) {
+      setError({ amount: "Amount cannot be greater than 10" });
+      return;
+    }
     if (!category) {
       setError({ category: "Category needs to selected!" });
       return;

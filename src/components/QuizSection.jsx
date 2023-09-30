@@ -72,24 +72,6 @@ const QuizSection = () => {
     }
   }, [start, GetQuestions]);
 
-  const limit = async () => {
-    try {
-      const response = await axios.get("https://opentdb.com/api_category.php");
-      const categories = response.data.trivia_categories;
-
-      // Iterate through categories and print the maximum limit
-      categories.forEach((category) => {
-        console.log(`Category: ${category.name}`);
-        console.log(`Max Questions (Q): ${category.max_questions}`);
-        console.log("-------------------------");
-      });
-    } catch (error) {
-      console.error("Error fetching category limits:", error);
-    }
-  };
-
-  limit();
-
   function decodeHTML(html) {
     const parser = new DOMParser();
     const doc = parser.parseFromString(html, "text/html");
